@@ -1,15 +1,29 @@
-html, body {
+html {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+body {
   width: 300px;
-}
-
-.page-choice {
-  width: 100%;
+  font-size: 1em;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
   padding: 4px;
-  font-size: 1.5em;
-  text-align: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+label {
   cursor: pointer;
+  width: 110px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  float: left;
+  
 }
-
-.page-choice:hover {
-  background-color: #CFF2F2;
+.page-choice {
+  margin-bottom: 4px;
+  width: 165px;
+  float: right;
 }
+div {clear: both;}
