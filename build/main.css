@@ -27,3 +27,7 @@ label {
   float: right;
 }
 div {clear: both;}
+h1 {
+  font-size: 1em;
+  font-weight: lighter;
+}
