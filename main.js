@@ -7,7 +7,7 @@ import PageUrl from './pageUrl'
 ReactDOM.render(
   <div>
     <h1>NetHelper</h1>
-    <PageUrl title={data.urls[0].title} url={data.urls[0].url} />
+    {data.urls.map((url, idx) => <PageUrl key={idx} title={url.title} url={url.url} />)}
   </div>,
   document.getElementById('app')
 )
