@@ -2,7 +2,7 @@ var data = {
   urls: [
     {
       title: 'Inv Item',
-      url: 'system.na2.netsuite.com/app/common/item/item.nl?id='
+      url: '/app/common/item/item.nl?id='
     },
     {
       title: 'Transaction',
