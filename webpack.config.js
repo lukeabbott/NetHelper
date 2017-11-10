@@ -25,7 +25,7 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'build/src'),
     filename: debug ? 'main.js' : 'main.min.js'
   }
 }
