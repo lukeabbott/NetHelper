@@ -8,23 +8,23 @@ export default class pageUrl extends React.Component {
       url: props.url
     }
   }
-  onKeyPress (e) {
-    var key = e.which || e.keyCode
-    if (key === 13) { // 13 is enter
-      if (!e.target.classList.contains('page-choice')) {
-        return
-      }
-      var chosenPage = 'https://system.na2.netsuite.com' + this.state.url
-      browser.tabs.create({
-        url: chosenPage
-      })
-    }
-  }
   render () {
+    var onKeyPress = (e) => {
+      var key = e.which || e.keyCode
+      if (key === 13) { // 13 is enter
+        if (!e.target.classList.contains('page-choice')) {
+          return
+        }
+        var chosenPage = 'https://system.na2.netsuite.com' + this.state.url
+        browser.tabs.create({
+          url: chosenPage
+        })
+      }
+    }
     return (
       <div>
         <label>{this.state.title}</label>
-        <input className='page-choice' type='text' onKeyPress={this.onKeyPress} />
+        <input className='page-choice' type='text' onKeyPress={onKeyPress} />
       </div>
     )
   }
