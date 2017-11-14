@@ -10,6 +10,9 @@
       "32": "images/NetHelper-Icon-32x32.png"
     }
   },
+  "options_ui": {
+    "page": "options.html"
+  },
   "applications": {
     "gecko": {
       "id": "NetHelper@moracode.com"
