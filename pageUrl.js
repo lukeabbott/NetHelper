@@ -15,7 +15,7 @@ export default class pageUrl extends React.Component {
         if (!e.target.classList.contains('page-choice')) {
           return
         }
-        var chosenPage = 'https://system.na2.netsuite.com' + this.state.url
+        var chosenPage = 'https://system.na2.netsuite.com' + this.state.url + e.target.value
         browser.tabs.create({
           url: chosenPage
         })
