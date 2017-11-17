@@ -8,7 +8,7 @@ import Settings from './settings'
 var appPage = document.getElementById('app')
 var optionsPage = document.getElementById('options')
 
-var urlJSON = browser.local.storage.get('urlJSON')
+var urlJSON = browser.storage.local.get('urlJSON')
 urlJSON = urlJSON || firstTimeUrls
 
 if (appPage) {
