@@ -8,15 +8,14 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader',
-        query: {
-          'presets': [['env', {
-            targets: {
-              browsers: ['last 2 major versions']
-            }
-          }], 'react']
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: ['env', 'react'],
+            plugins: ['transform-class-properties']
+          }
         }
       }
     ]

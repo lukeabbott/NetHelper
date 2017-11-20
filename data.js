@@ -1,4 +1,4 @@
-var data = {
+var initData = {
   urls: [
     {
       title: 'Inv Item',
@@ -27,4 +27,4 @@ var data = {
   ]
 }
 
-export { data }
+export { initData }
