@@ -1,10 +1,23 @@
 import React from 'react'
 
 export default class pageUrl extends React.Component {
-  setData = e => browser.storage.local.set({urlJSON: e.target.value})
+  constructor (props) {
+    super(props)
+    this.state = {
+      data: props.data
+    }
+  }
+
+  setData = e => {
+    e.preventDefault()
+    console.log(e.target.value)
+    let urls = e.target.value
+    browser.storage.local.set({settings: JSON.parse(urls)})
+    this.setState({data: urls})
+  }
   render () {
     return (
-      <textarea value={this.props.data} onChange={this.setData} />
+      <textarea value={this.state.data} onChange={this.setData} />
     )
   }
 }

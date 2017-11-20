@@ -1,4 +1,4 @@
-var urlJSON = {
+var initData = {
   urls: [
     {
       title: 'Inv Item',
@@ -27,4 +27,4 @@ var urlJSON = {
   ]
 }
 
-export { urlJSON }
+export { initData }
