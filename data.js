@@ -1,7 +1,7 @@
 var initData = {
   urls: [
     {
-      title: 'Inv Item',
+      title: 'Inventory Item',
       url: '/app/common/item/item.nl?id='
     },
     {
@@ -9,15 +9,15 @@ var initData = {
       url: '/app/accounting/transactions/transaction.nl?id='
     },
     {
-      title: 'ISM',
+      title: 'Item Selection Map',
       url: '/app/common/custom/custrecordentry.nl?rectype=2408&id='
     },
     {
-      title: 'Property',
+      title: 'Product Property',
       url: '/app/common/custom/custrecordentry.nl?rectype=2407&id='
     },
     {
-      title: 'SM',
+      title: 'Selection Mod',
       url: '/app/common/custom/custrecordentry.nl?rectype=2409&id='
     },
     {

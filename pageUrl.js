@@ -24,8 +24,7 @@ export default class pageUrl extends React.Component {
     }
     return (
       <div>
-        <label>{this.state.title}</label>
-        <input className='page-choice' type='text' onKeyPress={onKeyPress} />
+        <input className='page-choice' type='text' placeholder={this.state.title} onKeyPress={onKeyPress} />
       </div>
     )
   }

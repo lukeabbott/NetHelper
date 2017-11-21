@@ -4,8 +4,8 @@ export default class pageUrl extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      urls: props.data.urls,
-      baseUrl: props.data.baseUrl
+      urls: JSON.stringify(props.data.urls),
+      baseUrl: JSON.stringify(props.data.baseUrl)
     }
   }
   handleEvent = (e) => {
@@ -24,8 +24,8 @@ export default class pageUrl extends React.Component {
   }
   render () {
     return ([
-      <textarea value={JSON.stringify(this.state.urls)} onChange={this.setUrls} />,
-      <textarea value={JSON.stringify(this.state.baseUrl)} onChange={this.setBaseUrl} />
+      <textarea value={this.state.urls} onChange={this.setUrls} />,
+      <textarea value={this.state.baseUrl} onChange={this.setBaseUrl} />
     ])
   }
 }
