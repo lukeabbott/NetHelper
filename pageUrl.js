@@ -5,7 +5,8 @@ export default class pageUrl extends React.Component {
     super(props)
     this.state = {
       title: props.title,
-      url: props.url
+      url: props.url,
+      baseUrl: props.baseUrl
     }
   }
   render () {
@@ -15,7 +16,7 @@ export default class pageUrl extends React.Component {
         if (!e.target.classList.contains('page-choice')) {
           return
         }
-        var chosenPage = 'https://system.na2.netsuite.com' + this.state.url + e.target.value
+        var chosenPage = this.state.baseUrl + this.state.url + e.target.value
         browser.tabs.create({
           url: chosenPage
         })

@@ -2,7 +2,7 @@
   "description": "NetHelper empowers quick access to NS records based on internal ids.",
   "manifest_version": 2,
   "name": "NetHelper",
-  "version": "2.0",
+  "version": "2.1.1",
   "browser_action": {
     "default_popup": "main.html",
     "default_icon": {
