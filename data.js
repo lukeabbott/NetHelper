@@ -24,7 +24,8 @@ var initData = {
       title: 'Step',
       url: '/app/common/custom/custrecordentry.nl?rectype=2406&id='
     }
-  ]
+  ],
+  baseUrl: 'https://system.na2.netsuite.com'
 }
 
 export { initData }
