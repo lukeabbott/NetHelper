@@ -29,4 +29,3 @@ loadUrlData.then((result) => {
     )
   }
 }, e => console.log(e))
-
