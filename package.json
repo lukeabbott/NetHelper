@@ -1,6 +1,6 @@
 {
   "name": "nethelper",
-  "version": "1.1.0",
+  "version": "2.1.2",
   "description": "A webextension that helps NetSuite users access records via internal ids",
   "scripts": {
     "test": "test",
