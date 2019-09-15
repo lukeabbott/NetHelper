@@ -1,8 +1,8 @@
 {
-  "description": "NetHelper empowers quick access to NS records based on internal ids.",
-  "manifest_version": 2,
+  "description": "NetHelper manages NetSuite shortcuts. It uses the current tabs account specific url to generate the shortcut link. This allows you to use one shortcut list while in multiple NetSuite accounts. The shortcuts can take an internalId to allow quick access to specific records.",
+  "manifest_version": 3,
   "name": "NetHelper",
-  "version": "2.1.2",
+  "version": "3.0.0",
   "browser_action": {
     "default_popup": "main.html",
     "default_icon": {
