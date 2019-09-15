@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/lukeabbott/NetHelper/issues"
   },
-  "homepage": "https://github.com/lukeabbott/NetHelper#readme"
+  "homepage": "https://github.com/lukeabbott/NetHelper#readme",
+  "dependencies": {
+    "vue": "^2.6.10"
+  }
 }
