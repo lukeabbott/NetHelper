@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>NetHelper Settings</h1>
+
+  <section>
+    <h2>Shortcuts</h2>
+    <p class="hint">
+      <strong>Standard</strong> records use a fixed URL path.
+      <strong>Custom Record</strong> shortcuts store a script ID and automatically
+      resolve the numeric record-type ID per domain via SuiteQL.
+    </p>
+    <div id="shortcut-list"></div>
+    <button id="add-btn" class="btn secondary">+ Add Shortcut</button>
+  </section>
+
+  <section>
+    <h2>Record Type Cache</h2>
+    <p class="hint">
+      Resolved custom-record-type IDs are cached per domain.
+      You can also add entries manually if SuiteQL REST services are unavailable.
+    </p>
+    <div id="cache-display"></div>
+    <details class="cache-add-section">
+      <summary>Add manual cache entry</summary>
+      <div class="cache-add-form">
+        <input type="text" id="cache-origin" placeholder="https://12345.app.netsuite.com">
+        <input type="text" id="cache-scriptid" placeholder="customrecord_my_record">
+        <input type="text" id="cache-rectype" placeholder="Numeric rectype ID">
+        <button id="cache-add-btn" class="btn secondary">Add</button>
+      </div>
+    </details>
+    <button id="clear-cache-btn" class="btn danger">Clear All Cached Entries</button>
+  </section>
+
+  <div id="actions">
+    <button id="save-btn" class="btn primary">Save Shortcuts</button>
+    <span id="status"></span>
+  </div>
+
+  <script type="module" src="options.js"></script>
+</body>
+</html>
